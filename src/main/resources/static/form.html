@@ -27,18 +27,22 @@
 	</nav>
     <h1>회원가입</h1>
     <div class="container">
-    <form>
+    <form action="/create" method"post">
 	  <div class="mb-3">
 	    <label for="userid" class="userid">UserID</label>
-	    <input type="text" class="form-control" id="userid" aria-describedby="userid">
+	    <input type="text" class="form-control" name="userid" aria-describedby="아이디">
 	  </div>
 	  <div class="mb-3">
 	    <label for="password" class="form-label">Password</label>
-	    <input type="password" class="form-control" id="password">
+	    <input type="password" class="form-control" name="password" aria-describedby="비밀번호">
 	  </div>
 	  <div class="mb-3">
 	    <label for="name" class="name">Name</label>
-	    <input type="text" class="form-control" id="name" aria-describedby="name">
+	    <input type="text" class="form-control" name="name" aria-describedby="이름">
+	  </div>
+	  <div class="mb-3">
+	    <label for="email" class="name">Email</label>
+	    <input type="email" class="form-control" name="email" aria-describedby="이메일">
 	  </div>
 	  <button type="submit" class="btn btn-primary">회원가입</button>
 	</form>
